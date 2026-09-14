@@ -136,16 +136,3 @@ function RawAcquisitionData_DTI_CS(b::BrukerFile)
 
     return RawAcquisitionData(params, profiles)
 end
-
-
-
-using Pkg
-
-Pkg.activate(".")
-
-println("Project : ", Base.active_project())
-println("Name    : ", Pkg.project().name)
-println("UUID    : ", Pkg.project().uuid)
-println("src     : ", readdir("src"))
-println("Main file exists : ", isfile("src/Subspace_DWI.jl"))
-println("Package found    : ", Base.find_package("Subspace_DWI"))
