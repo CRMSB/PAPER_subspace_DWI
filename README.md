@@ -30,18 +30,17 @@ The reconstruction pipeline includes:
 
 ## Repository structure
 
-```text
+
 PAPER_subspace_DWI/
-??? src/
-?   ??? Subspace_DWI.jl
-?   ??? bruker_sequence.jl
-?   ??? build_basis.jl
-?   ??? subspace_reconstruction.jl
-?
-??? Project.toml
-??? Manifest.toml
-??? README.md
-```
+|-- src/
+|   |-- Subspace_DWI.jl
+|   |-- bruker_sequence.jl
+|   |-- build_basis.jl
+|   `-- subspace_reconstruction.jl
+|-- Project.toml
+|-- Manifest.toml
+`-- README.md
+
 
 The main source files contain:
 
@@ -122,7 +121,7 @@ $$
 D = V \Lambda V^{T}
 $$
 
-where \(\Lambda\) contains the tensor eigenvalues and \(V\) contains the corresponding eigenvectors.
+where $$\Lambda$$ contains the tensor eigenvalues and $$V$$ contains the corresponding eigenvectors.
 
 The simulated signal dictionary is decomposed using singular value decomposition (SVD), and the dominant right singular vectors are retained to construct the temporal subspace basis.
 
@@ -266,7 +265,7 @@ Citation information will be updated following publication.
 ## Authors
 
 **Nicolas Simonneau**
-Centre de R�sonance Magn�tique des Syst�mes Biologiques (CRMSB)
+Centre de Resonance Magnetique des Systemes Biologiques (CRMSB)
 University of Bordeaux
 
 ---
